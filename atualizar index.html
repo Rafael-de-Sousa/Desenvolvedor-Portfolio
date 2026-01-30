@@ -11,11 +11,15 @@
 </head>
 
 <body>
-    <header class="container.liquid bg-dark">
-        <nav class="nav container p-3 justify-content-end">
+    <!--<header class="container.liquid bg-dark">-->
+    <header>
+        <nav id="nav" class="nav container p-3 justify-content-end">
             <ul class="nav">
                 <li class="nav-item">
-                    <a class="nav-link text-white m-1" href="#">Rafael Sousa</a>
+                    <a class="nav-link text-white m-1" href="#">Rafael de Sousa</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white m-1" href="#projetos">Projetos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-white m-1" href="#contato">Contato</a>
@@ -24,13 +28,16 @@
         </nav>
     </header>
 
-    <section class="container text-center">
-        <img src="ibm-pc.png" class="img m-5" alt="foto perfil" width="290" height="250">
-        <p>Olá, meu nome é Rafael Sousa e curso Análise e Desenvolvimento de Sistemas.</p>
+    <a href="#contato"><button id="button">Rafael de Sousa</button></a>
+
+    <section id="section1" class="container text-center">
+        <img src="ibm-pc.png" class="img m-5" alt="foto perfil" width="250" height="250">
+        <div id="MeuNome" class="container text-center">Rafael de Sousa</div>
+        <p>Olá, meu nome é Rafael e curso Análise e Desenvolvimento de Sistemas.</p>
     </section>
 
     <section class="container text-center">
-        <h4>Veja alguns projetos:</h4>
+        <h4 id="projetos">Veja alguns projetos:</h4>
         <div class="row row-cols-auto justify-content-center">
             <div class="card p-3 m-2">
                 <a href="https://rafael-de-sousa.github.io/Jogo-da-Memoria/" target="_blank"><img src="JogoDaMemoria.png" class="card-img-top mb-2" alt="Foto do projeto 1"></a>
@@ -64,6 +71,8 @@
             
         </div>
     </section>
+
+    <script src="script.js"></script>
 
     <footer class="container.liquid bg-dark p-4 mt-4 text-center text-white">
         <div>
