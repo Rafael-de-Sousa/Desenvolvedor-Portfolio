@@ -1,6 +1,63 @@
-body{
-    background-color: rgb(240, 240, 240);
+body {
+    background-color: rgb(1, 1, 94);
+    color: rgb(155, 169, 180);
+    font-family: 'Courier New', monospace;
 }
-.img{
-    border-radius: 4%;
+#nav{
+    background-color: rgb(1, 1, 94);
 }
+
+#button{
+    position: absolute; /* Necessário para mover o botão */
+}
+
+.img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+#section1 {
+    background-color: rgb(1, 1, 94);
+    width: 250pt;
+    height: 420pt;
+    
+}
+
+#MeuNome {
+
+
+    width: 150pt;
+
+    color: rgb(155, 169, 180);
+    font-family: 'Courier New', monospace;
+    font-size: 2rem;
+    overflow: hidden;
+    /* Esconde o texto fora da área visível */
+    border-right: 2px solid rgb(155, 169, 180);;
+    /* Efeito de cursor */
+    white-space: nowrap;
+    /* Evita quebra de linha */
+    animation: typing 4s steps(10, end) forwards, blink 0.5s step-end infinite;
+    animation-iteration-count: infinite;
+}
+
+/* Animação para "escrever" o texto */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 20ch;
+        /* Ajuste conforme o comprimento do texto */
+    }
+    
+}
+
+/* Animação para o cursor piscando */
+@keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
