@@ -5,92 +5,116 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rafael de Sousa</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="estilo.css">
 </head>
 
 <body>
-    <!--<header class="container.liquid bg-dark">-->
-    <header>
-        <nav id="nav" class="nav container p-3 justify-content-end">
+
+    <!-- NAVBAR -->
+    <header class="bg-dark">
+        <nav class="container p-3 d-flex justify-content-end">
             <ul class="nav">
                 <li class="nav-item">
-                    <a class="nav-link text-white m-1" href="#">Rafael de Sousa</a>
+                    <a class="nav-link text-white" href="#">Rafael de Sousa</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white m-1" href="#projetos">Projetos</a>
+                    <a class="nav-link text-white" href="#projetos">Projetos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white m-1" href="#contato">Contato</a>
+                    <a class="nav-link text-white" href="#contato">Contato</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <a href="#contato"><button id="button">Rafael de Sousa</button></a>
-
-    <section id="section1" class="container text-center">
-        <img src="ibm-pc.png" class="img m-5" alt="foto perfil" width="250" height="250">
-        <div id="MeuNome" class="container text-center">Rafael de Sousa</div>
+    <!-- SOBRE -->
+    <section class="container text-center py-5">
+        <img src="ibm-pc.png" class="mb-4" alt="foto perfil" width="200">
+        <h2>Rafael de Sousa</h2>
         <p>Olá, meu nome é Rafael e curso Análise e Desenvolvimento de Sistemas.</p>
     </section>
 
-    <section class="container text-center">
-        <h4 id="projetos">Veja alguns projetos:</h4>
+    <!-- PROJETOS -->
+    <section class="container text-center py-5">
+        <h3 id="projetos" class="mb-4">Veja alguns projetos:</h3>
+
         <div class="row justify-content-center">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-                <div class="card p-3 m-2">
-                    <a href="https://rafael-de-sousa.github.io/Sistema-de-Agendamento/" target="_blank"><img src="montanhas.png" class="card-img-top mb-2" alt="Foto do projeto 1"></a>
-                    <h5 class="card-title">Sistema de Agendamento</h5>
-                    <p class="card-substitle">Sistema de agendamento online para clínica, 
-                    desenvolvido com HTML, CSS e JavaScript, permitindo cadastro 
-                    e visualização de horários marcados.</p>
-                    <a href="https://rafael-de-sousa.github.io/Sistema-de-Agendamento/" target="_blank" class="btn btn-primary mt-2">Acessar</a>
+
+            <!-- Projeto 1 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-4">
+                <div class="card card-projeto h-100 text-center">
+                    <a href="https://rafael-de-sousa.github.io/Sistema-de-Agendamento/" target="_blank">
+                        <img src="montanhas.png" class="card-img-top" alt="Sistema de Agendamento">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Sistema de Agendamento</h5>
+                        <p class="card-text">
+                            Sistema de agendamento online para clínica desenvolvido com HTML, CSS e JavaScript.
+                        </p>
+                        <a href="https://rafael-de-sousa.github.io/Sistema-de-Agendamento/" 
+                           target="_blank" 
+                           class="btn btn-primary">
+                            Acessar
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-                <div class="card p-3 m-2">
-                    <a href="https://rafael-de-sousa.github.io/Loja-Virtual/"><img src="montanhas.png" class="card-img-top mb-2" alt="Foto do projeto 2"></a>
-                    <h5 class="card-title">Loja Virtual</h5>
-                    <p class="card-substitle">Aplicação web de loja virtual 
-                    desenvolvida em HTML, CSS, JavaScript e Bootstrap, com funcionalidades de listagem de produtos,
-                    carrinho de compras e validações de formulário.</p>
-                    <a href="https://rafael-de-sousa.github.io/Loja-Virtual/" target="_blank" class="btn btn-primary mt-2">Acessar</a>
+
+            <!-- Projeto 2 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-4">
+                <div class="card card-projeto h-100 text-center">
+                    <a href="https://rafael-de-sousa.github.io/Loja-Virtual/" target="_blank">
+                        <img src="montanhas.png" class="card-img-top" alt="Loja Virtual">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Loja Virtual</h5>
+                        <p class="card-text">
+                            Loja virtual com HTML, CSS, JavaScript e Bootstrap, com carrinho e validações.
+                        </p>
+                        <a href="https://rafael-de-sousa.github.io/Loja-Virtual/" 
+                           target="_blank" 
+                           class="btn btn-primary">
+                            Acessar
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center">
-                <div class="card p-3 m-2">
-                    <a href="https://rafael-de-sousa.github.io/Lista-de-Tarefas/"><img src="montanhas.png" class="card-img-top mb-2" alt="Foto do projeto 3"></a>
-                    <h5 class="card-title">Lista de Tarefas</h5>
-                    <p class="card-substitle">Aplicação web de lista de tarefas desenvolvida em HTML, 
-                    CSS e JavaScript, com funcionalidades de adicionar e remover tarefas.</p>
-                    <a href="https://rafael-de-sousa.github.io/Lista-de-Tarefas/" class="btn btn-primary mt-2">Acessar</a>
+
+            <!-- Projeto 3 -->
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-4">
+                <div class="card card-projeto h-100 text-center">
+                    <a href="https://rafael-de-sousa.github.io/Lista-de-Tarefas/" target="_blank">
+                        <img src="montanhas.png" class="card-img-top" alt="Lista de Tarefas">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Lista de Tarefas</h5>
+                        <p class="card-text">
+                            Aplicação de lista de tarefas desenvolvida em HTML, CSS e JavaScript.
+                        </p>
+                        <a href="https://rafael-de-sousa.github.io/Lista-de-Tarefas/" 
+                           target="_blank" 
+                           class="btn btn-primary">
+                            Acessar
+                        </a>
+                    </div>
                 </div>
             </div>
+
         </div>
     </section>
 
-    <script src="script.js"></script>
-
-    <footer class="container.liquid bg-dark p-4 mt-4 text-center text-white">
-        <div>
-            <h4>Contato:<a name="contato"></a></h4>
-            <div class="row row-cols-auto justify-content-center pt-2">
-                <a href="https://github.com/Rafael-de-Sousa" target="_blank">github.com/Rafael-de-Sousa</a>
-            </div>
-        </div>
-        <p class="container pt-3">&copy; Rafael de Sousa</p>
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white text-center p-4 mt-5">
+        <h5 id="contato">Contato</h5>
+        <a href="https://github.com/Rafael-de-Sousa" 
+           target="_blank" 
+           class="text-white">
+           github.com/Rafael-de-Sousa
+        </a>
+        <p class="mt-3 mb-0">&copy; 2026 Rafael de Sousa</p>
     </footer>
+
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
