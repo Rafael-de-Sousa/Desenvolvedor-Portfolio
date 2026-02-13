@@ -67,5 +67,20 @@ body {
     text-align: justify;
 }
 
+.card-projeto {
+    max-width: 240px;   /* tamanho ideal para desktop */
+    width: 100%;
+    transition: 0.3s;
+}
+
+.card-projeto:hover {
+    transform: translateY(-5px);
+}
+
+.card-img-top {
+    height: 150px;
+    object-fit: cover;
+}
+
 
 
