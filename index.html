@@ -12,93 +12,99 @@
 
 <body>
 
-    <!-- NAVBAR -->
-    <header class="bg-dark">
-        <nav class="container p-3 d-flex justify-content-end">
+    <!-- HEADER -->
+    <header>
+        <nav id="nav" class="nav container p-3 justify-content-end">
             <ul class="nav">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#">Rafael de Sousa</a>
+                    <a class="nav-link text-white m-1" href="#">Rafael de Sousa</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#projetos">Projetos</a>
+                    <a class="nav-link text-white m-1" href="#projetos">Projetos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="#contato">Contato</a>
+                    <a class="nav-link text-white m-1" href="#contato">Contato</a>
                 </li>
             </ul>
         </nav>
     </header>
 
+    <!-- BOTÃO FIXO COM NOME -->
+    <a href="#contato">
+        <button id="button">Rafael de Sousa</button>
+    </a>
+
     <!-- SOBRE -->
-    <section class="container text-center py-5">
-        <img src="ibm-pc.png" class="mb-4" alt="foto perfil" width="200">
-        <h2>Rafael de Sousa</h2>
+    <section id="section1" class="container text-center py-5">
+        <!-- IMAGEM REDONDA -->
+        <img src="ibm-pc.png" 
+             class="m-4 rounded-circle img-fluid" 
+             alt="foto perfil"
+             width="250">
+
+        <div id="MeuNome" class="container text-center">
+            Rafael de Sousa
+        </div>
+
         <p>Olá, meu nome é Rafael e curso Análise e Desenvolvimento de Sistemas.</p>
     </section>
 
     <!-- PROJETOS -->
     <section class="container text-center py-5">
-        <h3 id="projetos" class="mb-4">Veja alguns projetos:</h3>
+        <h4 id="projetos">Veja alguns projetos:</h4>
 
         <div class="row justify-content-center">
 
             <!-- Projeto 1 -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-4">
-                <div class="card card-projeto h-100 text-center">
+                <div class="card card-projeto p-3 h-100">
                     <a href="https://rafael-de-sousa.github.io/Sistema-de-Agendamento/" target="_blank">
-                        <img src="montanhas.png" class="card-img-top" alt="Sistema de Agendamento">
+                        <img src="montanhas.png" class="card-img-top mb-2" alt="Projeto 1">
                     </a>
-                    <div class="card-body">
-                        <h5 class="card-title">Sistema de Agendamento</h5>
-                        <p class="card-text">
-                            Sistema de agendamento online para clínica desenvolvido com HTML, CSS e JavaScript.
-                        </p>
-                        <a href="https://rafael-de-sousa.github.io/Sistema-de-Agendamento/" 
-                           target="_blank" 
-                           class="btn btn-primary">
-                            Acessar
-                        </a>
-                    </div>
+                    <h5 class="card-title">Sistema de Agendamento</h5>
+                    <p class="card-subtitle">
+                        Sistema de agendamento online para clínica desenvolvido com HTML, CSS e JavaScript.
+                    </p>
+                    <a href="https://rafael-de-sousa.github.io/Sistema-de-Agendamento/" 
+                       target="_blank" 
+                       class="btn btn-primary mt-2">
+                        Acessar
+                    </a>
                 </div>
             </div>
 
             <!-- Projeto 2 -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-4">
-                <div class="card card-projeto h-100 text-center">
+                <div class="card card-projeto p-3 h-100">
                     <a href="https://rafael-de-sousa.github.io/Loja-Virtual/" target="_blank">
-                        <img src="montanhas.png" class="card-img-top" alt="Loja Virtual">
+                        <img src="montanhas.png" class="card-img-top mb-2" alt="Projeto 2">
                     </a>
-                    <div class="card-body">
-                        <h5 class="card-title">Loja Virtual</h5>
-                        <p class="card-text">
-                            Loja virtual com HTML, CSS, JavaScript e Bootstrap, com carrinho e validações.
-                        </p>
-                        <a href="https://rafael-de-sousa.github.io/Loja-Virtual/" 
-                           target="_blank" 
-                           class="btn btn-primary">
-                            Acessar
-                        </a>
-                    </div>
+                    <h5 class="card-title">Loja Virtual</h5>
+                    <p class="card-subtitle">
+                        Loja virtual com HTML, CSS, JavaScript e Bootstrap.
+                    </p>
+                    <a href="https://rafael-de-sousa.github.io/Loja-Virtual/" 
+                       target="_blank" 
+                       class="btn btn-primary mt-2">
+                        Acessar
+                    </a>
                 </div>
             </div>
 
             <!-- Projeto 3 -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex justify-content-center mb-4">
-                <div class="card card-projeto h-100 text-center">
+                <div class="card card-projeto p-3 h-100">
                     <a href="https://rafael-de-sousa.github.io/Lista-de-Tarefas/" target="_blank">
-                        <img src="montanhas.png" class="card-img-top" alt="Lista de Tarefas">
+                        <img src="montanhas.png" class="card-img-top mb-2" alt="Projeto 3">
                     </a>
-                    <div class="card-body">
-                        <h5 class="card-title">Lista de Tarefas</h5>
-                        <p class="card-text">
-                            Aplicação de lista de tarefas desenvolvida em HTML, CSS e JavaScript.
-                        </p>
-                        <a href="https://rafael-de-sousa.github.io/Lista-de-Tarefas/" 
-                           target="_blank" 
-                           class="btn btn-primary">
-                            Acessar
-                        </a>
-                    </div>
+                    <h5 class="card-title">Lista de Tarefas</h5>
+                    <p class="card-subtitle">
+                        Aplicação web de lista de tarefas desenvolvida em HTML, CSS e JavaScript.
+                    </p>
+                    <a href="https://rafael-de-sousa.github.io/Lista-de-Tarefas/" 
+                       class="btn btn-primary mt-2">
+                        Acessar
+                    </a>
                 </div>
             </div>
 
@@ -106,14 +112,14 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="bg-dark text-white text-center p-4 mt-5">
-        <h5 id="contato">Contato</h5>
-        <a href="https://github.com/Rafael-de-Sousa" 
-           target="_blank" 
-           class="text-white">
-           github.com/Rafael-de-Sousa
-        </a>
-        <p class="mt-3 mb-0">&copy; 2026 Rafael de Sousa</p>
+    <footer class="container-fluid bg-dark p-4 mt-4 text-center text-white">
+        <h4 id="contato">Contato:</h4>
+        <div class="pt-2">
+            <a href="https://github.com/Rafael-de-Sousa" target="_blank" class="text-white">
+                github.com/Rafael-de-Sousa
+            </a>
+        </div>
+        <p class="pt-3 mb-0">&copy; Rafael de Sousa</p>
     </footer>
 
 </body>
