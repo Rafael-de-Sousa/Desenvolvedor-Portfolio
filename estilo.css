@@ -3,84 +3,74 @@ body {
     color: rgb(155, 169, 180);
     font-family: 'Courier New', monospace;
 }
-#nav{
+
+#nav {
     background-color: rgb(1, 1, 94);
 }
 
-#button{
-    position: absolute; /* Necessário para mover o botão */
+#button {
+    position: absolute;
 }
 
+/* Imagem redonda */
 .img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
+    object-fit: cover;
 }
 
+/* Seção principal centralizada corretamente */
 #section1 {
     background-color: rgb(1, 1, 94);
-    width: 250pt;
-    height: 420pt;
-    
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 20px;
 }
 
+/* Nome animado */
 #MeuNome {
-
-
-    width: 150pt;
-
+    width: 0;
+    margin: 0 auto;
     color: rgb(155, 169, 180);
-    font-family: 'Courier New', monospace;
     font-size: 2rem;
     overflow: hidden;
-    /* Esconde o texto fora da área visível */
-    border-right: 2px solid rgb(155, 169, 180);;
-    /* Efeito de cursor */
+    border-right: 2px solid rgb(155, 169, 180);
     white-space: nowrap;
-    /* Evita quebra de linha */
-    animation: typing 4s steps(10, end) forwards, blink 0.5s step-end infinite;
-    animation-iteration-count: infinite;
+    animation: typing 4s steps(20, end) infinite,
+               blink 0.7s step-end infinite;
 }
 
-/* Animação para "escrever" o texto */
+/* Animação de digitação */
 @keyframes typing {
-    from {
-        width: 0;
-    }
-
-    to {
-        width: 20ch;
-        /* Ajuste conforme o comprimento do texto */
-    }
-    
+    from { width: 0 }
+    to { width: 20ch }
 }
 
-/* Animação para o cursor piscando */
+/* Cursor piscando */
 @keyframes blink {
-    50% {
-      border-color: transparent;
-    }
-  }
+    50% { border-color: transparent; }
+}
 
-/* Justificar o texto da classe especificada*/
-.card-substitle{
+/* Texto dos cards */
+.card-subtitle {
     text-align: justify;
 }
 
+/* Cards menores */
 .card-projeto {
-    max-width: 240px;   /* tamanho ideal para desktop */
+    max-width: 220px;
     width: 100%;
     transition: 0.3s;
 }
 
 .card-projeto:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px);
 }
 
+/* Imagem do card */
 .card-img-top {
-    height: 150px;
+    height: 140px;
     object-fit: cover;
 }
-
-
-
