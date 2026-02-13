@@ -63,7 +63,8 @@ body {
   }
 
 /* Justificar o texto da classe especificada*/
-.card-substitle{
+.justificado1, .justificado2, .justificado3{
     text-align: justify;
 }
+
 
